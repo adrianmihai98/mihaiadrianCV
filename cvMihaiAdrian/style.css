@@ -1,0 +1,170 @@
+*{
+  font-family: 'Calibri' ,sans-serif; 
+  user-select: none;
+  text-transform: capitalize;
+  color: #074963;
+}
+
+a:link {
+  text-decoration: inherit;
+  color: white;
+  cursor:pointer;
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: white;
+  cursor: pointer;
+}
+
+body {
+    background: rgb(204,204,204); 
+  }
+  page[size="A4"] {
+    background: white;
+    width: 21cm;
+    height: 29.7cm;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1cm;
+  }
+  h1{
+    font-size:16px;
+  }
+  h2{
+    font-size: 14px;
+  }
+  p{
+    font-size: 12px;
+  }
+.profile-picture{
+
+    width: 5cm;
+    height:5cm;
+    background-color: #E8C4C4;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border: 1px solid #E8C4C4;
+
+  }
+
+  .profile-picture img
+  {
+    height: 100%; width: 100%;
+    border-radius: 50%;
+
+  }
+
+  .detail-subject{
+    background-color: #F2E5E5;
+    margin-top: 1cm;
+    margin-left: 1cm;
+    margin-bottom: 2cm;
+    border-radius: 20px;
+  }
+
+  .components > *{
+    display: block;
+  }
+
+  .components p{
+    color: #ffffff;
+  }
+
+  .components h2{}
+
+  @media print {
+    body, page[size="A4"] {
+      margin: 0;
+      box-shadow: 0;
+    }
+  }
+
+  .wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+
+  }
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  
+  .main {
+    width: 21cm;
+    height: 29.7cm;
+    background-color: #f0f0f0;
+    box-shadow: 10px 0 5px -2px #888;
+    
+  }
+
+  #Skills{
+    text-align: left;
+  }
+  #Skills h2{
+    margin-left: 0.4cm;
+    
+  }
+#name h2{
+  color: #FDEBED;
+  font-size: 18px;
+
+}
+  #divstyle{
+    height: auto;
+    width: 90%;
+    border-top: .2cm solid #015b7f;
+    border-radius: 10px;
+    border-bottom: .2cm solid #015b7f;
+    margin-bottom: .4cm;
+    background-color: #88888804;
+  }
+  #divstyle h1{
+    text-align: center;
+  }
+  #divstyle p{
+    margin-left: 1cm;
+    text-transform: none;
+    line-height: .45cm;
+    margin-right: 30px;
+    margin-bottom: 0.8cm;
+  }
+
+  .levelbar{
+    
+    width: 50px;
+    height: .3cm;
+    background-color: #028fb3;
+    border-radius: 20%;
+    margin-left: 2px;
+    
+  }
+
+  .skilllevelwrapper{
+    display: flex;
+    margin-left: 0.4cm;
+  }
+  
+  .categories{
+    margin-top: 1.5cm;
+    margin-left: 1.5cm;
+  }
+  
+  .aside-1 {
+    background: #a7aab1;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.75);
+    clip-path: inset(0px -15px 0px 0px);
+  }
+  
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+  }
+  
